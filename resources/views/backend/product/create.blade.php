@@ -100,9 +100,9 @@
           <label for="condition">Condicion</label>
           <select name="condition" class="form-control">
               <option value="">--Selecciona una condicion--</option>
-              <option value="default">Nuevo</option>
-              <option value="new">Buen estado</option>
-              <option value="hot">Defectuoso - aceptable</option>
+              <option value="default">Defectuoso</option>
+              <option value="new">Nuevo</option>
+              <option value="hot">Super bien</option>
           </select>
         </div>
 

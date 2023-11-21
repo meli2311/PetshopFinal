@@ -9,8 +9,8 @@
          </div>
      </div>
     <div class="card-header py-3">
-      <h6 class="m-0 font-weight-bold text-primary float-left">Banners List</h6>
-      <a href="{{route('banner.create')}}" class="btn btn-primary btn-sm float-right" data-toggle="tooltip" data-placement="bottom" title="Add User"><i class="fas fa-plus"></i> Add Banner</a>
+      <h6 class="m-0 font-weight-bold text-primary float-left">Lista de banner</h6>
+      <a href="{{route('banner.create')}}" class="btn btn-primary btn-sm float-right" data-toggle="tooltip" data-placement="bottom" title="Add User"><i class="fas fa-plus"></i> Agregar Banner</a>
     </div>
     <div class="card-body">
       <div class="table-responsive">
@@ -18,22 +18,22 @@
         <table class="table table-bordered" id="banner-dataTable" width="100%" cellspacing="0">
           <thead>
             <tr>
-              <th>S.N.</th>
-              <th>Title</th>
-              <th>Slug</th>
-              <th>Photo</th>
-              <th>Status</th>
-              <th>Action</th>
+              <th>Numero</th>
+              <th>Titulo</th>
+              <th>Tipo</th>
+              <th>Imagen</th>
+              <th>Estado</th>
+              <th>Accion</th>
             </tr>
           </thead>
           <tfoot>
             <tr>
-              <th>S.N.</th>
-              <th>Title</th>
-              <th>Slug</th>
-              <th>Photo</th>
-              <th>Status</th>
-              <th>Action</th>
+              <th>Numero</th>
+              <th>Titulo</th>
+              <th>Tipo</th>
+              <th>Imagen</th>
+              <th>Estado</th>
+              <th>Accion</th>
               </tr>
           </tfoot>
           <tbody>
@@ -90,7 +90,7 @@
         </table>
         <span style="float:right">{{$banners->links()}}</span>
         @else
-          <h6 class="text-center">No banners found!!! Please create banner</h6>
+          <h6 class="text-center">¡¡¡No se encontraron banners!!! Por favor crea un banner</h6>
         @endif
       </div>
     </div>

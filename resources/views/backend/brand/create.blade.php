@@ -3,31 +3,36 @@
 @section('main-content')
 
 <div class="card">
-    <h5 class="card-header">Add Brand</h5>
+    <h5 class="card-header">Agregar marca</h5>
     <div class="card-body">
       <form method="post" action="{{route('brand.store')}}">
         {{csrf_field()}}
         <div class="form-group">
-          <label for="inputTitle" class="col-form-label">Title <span class="text-danger">*</span></label>
-        <input id="inputTitle" type="text" name="title" placeholder="Enter title"  value="{{old('title')}}" class="form-control">
+          <label for="inputTitle" class="col-form-label">Titulo <span class="text-danger">*</span></label>
+        <input id="inputTitle" type="text" name="title" placeholder="Ingresa un titulo"  value="{{old('title')}}" class="form-control">
         @error('title')
         <span class="text-danger">{{$message}}</span>
         @enderror
         </div>
         
         <div class="form-group">
-          <label for="status" class="col-form-label">Status <span class="text-danger">*</span></label>
+          <label for="status" class="col-form-label">Estado <span class="text-danger">*</span></label>
           <select name="status" class="form-control">
-              <option value="active">Active</option>
-              <option value="inactive">Inactive</option>
+              <option value="active">Activo</option>
+              <option value="inactive">Inactivo</option>
           </select>
           @error('status')
           <span class="text-danger">{{$message}}</span>
           @enderror
         </div>
         <div class="form-group mb-3">
+<<<<<<< HEAD
+          <button type="reset" class="btn btn-warning">Limpiar</button>
+           <button class="btn btn-success" type="submit">Guardar</button>
+=======
           <button type="reset" class="btn btn-warning" aria-label="Reset">Reset</button>
            <button class="btn btn-success" type="submit" aria-label="Submit">Submit</button>
+>>>>>>> 6ef68cfb76da90f7c6f0b47861090b4dac5b4941
         </div>
       </form>
     </div>

@@ -5,20 +5,20 @@
 @section('main-content')
 
 <div class="card">
-    <h5 class="card-header">Add Banner</h5>
+    <h5 class="card-header">Agregar banner</h5>
     <div class="card-body">
       <form method="post" action="{{route('banner.store')}}">
         {{csrf_field()}}
         <div class="form-group">
-          <label for="inputTitle" class="col-form-label">Title <span class="text-danger">*</span></label>
-        <input id="inputTitle" type="text" name="title" placeholder="Enter title"  value="{{old('title')}}" class="form-control">
+          <label for="inputTitle" class="col-form-label">Titulo <span class="text-danger">*</span></label>
+        <input id="inputTitle" type="text" name="title" placeholder="Ingresar titulo"  value="{{old('title')}}" class="form-control">
         @error('title')
         <span class="text-danger">{{$message}}</span>
         @enderror
         </div>
 
         <div class="form-group">
-          <label for="inputDesc" class="col-form-label">Description</label>
+          <label for="inputDesc" class="col-form-label">Descripcion</label>
           <textarea class="form-control" id="description" name="description">{{old('description')}}</textarea>
           @error('description')
           <span class="text-danger">{{$message}}</span>
@@ -26,11 +26,11 @@
         </div>
 
         <div class="form-group">
-        <label for="inputPhoto" class="col-form-label">Photo <span class="text-danger">*</span></label>
+        <label for="inputPhoto" class="col-form-label">Imagen <span class="text-danger">*</span></label>
         <div class="input-group">
             <span class="input-group-btn">
                 <a id="lfm" data-input="thumbnail" data-preview="holder" class="btn btn-primary">
-                <i class="fa fa-picture-o"></i> Choose
+                <i class="fa fa-picture-o"></i> Elegir
                 </a>
             </span>
           <input id="thumbnail" class="form-control" type="text" name="photo" value="{{old('photo')}}">
@@ -42,18 +42,23 @@
         </div>
         
         <div class="form-group">
-          <label for="status" class="col-form-label">Status <span class="text-danger">*</span></label>
+          <label for="status" class="col-form-label">Estado <span class="text-danger">*</span></label>
           <select name="status" class="form-control">
-              <option value="active">Active</option>
-              <option value="inactive">Inactive</option>
+              <option value="active">Activo</option>
+              <option value="inactive">Inactivo</option>
           </select>
           @error('status')
           <span class="text-danger">{{$message}}</span>
           @enderror
         </div>
         <div class="form-group mb-3">
+<<<<<<< HEAD
+          <button type="reset" class="btn btn-warning">Limpiar</button>
+           <button class="btn btn-success" type="submit">Guardar</button>
+=======
           <button type="reset" class="btn btn-warning" aria-label="Reset">Reset</button>
            <button class="btn btn-success" type="submit" aria-label="Submit">Submit</button>
+>>>>>>> 6ef68cfb76da90f7c6f0b47861090b4dac5b4941
         </div>
       </form>
     </div>

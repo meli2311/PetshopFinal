@@ -3,12 +3,12 @@
 @section('main-content')
 
 <div class="card">
-    <h5 class="card-header">Add Coupon</h5>
+    <h5 class="card-header">Agregar cupon</h5>
     <div class="card-body">
       <form method="post" action="{{route('coupon.store')}}">
         {{csrf_field()}}
         <div class="form-group">
-        <label for="inputTitle" class="col-form-label">Coupon Code <span class="text-danger">*</span></label>
+        <label for="inputTitle" class="col-form-label">Codigo de cupon <span class="text-danger">*</span></label>
         <input id="inputTitle" type="text" name="code" placeholder="Enter Coupon Code"  value="{{old('code')}}" class="form-control">
         @error('code')
         <span class="text-danger">{{$message}}</span>
@@ -16,10 +16,10 @@
         </div>
 
         <div class="form-group">
-            <label for="type" class="col-form-label">Type <span class="text-danger">*</span></label>
+            <label for="type" class="col-form-label">Tipo <span class="text-danger">*</span></label>
             <select name="type" class="form-control">
-                <option value="fixed">Fixed</option>
-                <option value="percent">Percent</option>
+                <option value="fixed">Precio fijo</option>
+                <option value="percent">Porcentaje</option>
             </select>
             @error('type')
             <span class="text-danger">{{$message}}</span>
@@ -27,7 +27,7 @@
         </div>
 
         <div class="form-group">
-            <label for="inputTitle" class="col-form-label">Value <span class="text-danger">*</span></label>
+            <label for="inputTitle" class="col-form-label">Valor <span class="text-danger">*</span></label>
             <input id="inputTitle" type="number" name="value" placeholder="Enter Coupon value"  value="{{old('value')}}" class="form-control">
             @error('value')
             <span class="text-danger">{{$message}}</span>
@@ -35,18 +35,23 @@
         </div>
         
         <div class="form-group">
-          <label for="status" class="col-form-label">Status <span class="text-danger">*</span></label>
+          <label for="status" class="col-form-label">Estado <span class="text-danger">*</span></label>
           <select name="status" class="form-control">
-              <option value="active">Active</option>
-              <option value="inactive">Inactive</option>
+              <option value="active">Activo</option>
+              <option value="inactive">Inactivo</option>
           </select>
           @error('status')
           <span class="text-danger">{{$message}}</span>
           @enderror
         </div>
         <div class="form-group mb-3">
+<<<<<<< HEAD
+          <button type="reset" class="btn btn-warning">Limpiar</button>
+           <button class="btn btn-success" type="submit">Guardar</button>
+=======
           <button type="reset" class="btn btn-warning" aria-label="Reset">Reset</button>
            <button class="btn btn-success" type="submit" aria-label="Submit">Submit</button>
+>>>>>>> 6ef68cfb76da90f7c6f0b47861090b4dac5b4941
         </div>
       </form>
     </div>

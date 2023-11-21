@@ -94,9 +94,14 @@
                             </select>
                             <form method="POST" action="{{ route('product.search') }}">
                                 @csrf
+<<<<<<< HEAD
+                                <input name="search" placeholder="Busque productos aquí....." type="search">
+                                <button class="btnn" type="submit"><i class="ti-search"></i></button>
+=======
                                 <input name="search" placeholder="Search Products Here....." type="search">
                                 <button class="btnn" type="submit" aria-label="search"><i
                                         class="ti-search"></i></button>
+>>>>>>> 6ef68cfb76da90f7c6f0b47861090b4dac5b4941
                             </form>
                         </div>
                     </div>
@@ -152,8 +157,7 @@
                                     <div class="bottom">
                                         <div class="total">
                                             <span>Total</span>
-                                            <span
-                                                class="total-amount">${{ number_format(Helper::totalWishlistPrice(), 2) }}</span>
+                                            <span class="total-amount">S/{{number_format(Helper::totalWishlistPrice(),2)}}</span>
                                         </div>
                                         <a href="{{ route('cart') }}" class="btn animate">Verificar</a>
                                     </div>
@@ -197,8 +201,7 @@
                                     <div class="bottom">
                                         <div class="total">
                                             <span>Total</span>
-                                            <span
-                                                class="total-amount">${{ number_format(Helper::totalCartPrice(), 2) }}</span>
+                                            <span class="total-amount">S/{{number_format(Helper::totalCartPrice(),2)}}</span>
                                         </div>
                                         <a href="{{ route('checkout') }}" class="btn animate">Verificar</a>
                                     </div>

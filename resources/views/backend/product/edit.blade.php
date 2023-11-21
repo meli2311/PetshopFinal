@@ -10,7 +10,7 @@
         @method('PATCH')
         <div class="form-group">
           <label for="inputTitle" class="col-form-label">Titulo <span class="text-danger">*</span></label>
-          <input id="inputTitle" type="text" name="title" placeholder="Enter title"  value="{{$product->title}}" class="form-control">
+          <input id="inputTitle" type="text" name="title" placeholder="Ingresar titulo"  value="{{$product->title}}" class="form-control">
           @error('title')
           <span class="text-danger">{{$message}}</span>
           @enderror
@@ -64,7 +64,7 @@
 
         <div class="form-group">
           <label for="price" class="col-form-label">Precio <span class="text-danger">*</span></label>
-          <input id="price" type="number" name="price" placeholder="Enter price"  value="{{$product->price}}" class="form-control">
+          <input id="price" type="number" name="price" placeholder="Ingresa el precio"  value="{{$product->price}}" class="form-control">
           @error('price')
           <span class="text-danger">{{$message}}</span>
           @enderror
@@ -107,9 +107,9 @@
           <label for="condition">Condicion</label>
           <select name="condition" class="form-control">
               <option value="">--Selecciona una condicion--</option>
-              <option value="default" {{(($product->condition=='default')? 'selected':'')}}>Nuevo</option>
-              <option value="new" {{(($product->condition=='new')? 'selected':'')}}>Buen estado</option>
-              <option value="hot" {{(($product->condition=='hot')? 'selected':'')}}>Defectuoso - aceptable</option>
+              <option value="default" {{(($product->condition=='default')? 'selected':'')}}>Defectuoso</option>
+              <option value="new" {{(($product->condition=='new')? 'selected':'')}}>Nuevo</option>
+              <option value="hot" {{(($product->condition=='hot')? 'selected':'')}}>Super bien</option>
           </select>
         </div>
 
@@ -147,7 +147,11 @@
           @enderror
         </div>
         <div class="form-group mb-3">
+<<<<<<< HEAD
+           <button class="btn btn-success" type="submit">Actualizar</button>
+=======
            <button class="btn btn-success" type="submit" aria-label="Update">Update</button>
+>>>>>>> 6ef68cfb76da90f7c6f0b47861090b4dac5b4941
         </div>
       </form>
     </div>

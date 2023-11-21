@@ -11,10 +11,10 @@
         </div>
     </div>
    <div class="card-header py-3">
-     <h4 class=" font-weight-bold">Profile</h4>
+     <h4 class=" font-weight-bold">Perfil</h4>
      <ul class="breadcrumbs">
          <li><a href="{{route('admin')}}" style="color:#999">Dashboard</a></li>
-         <li><a href="" class="active text-primary">Profile Page</a></li>
+         <li><a href="" class="active text-primary">Pagina de perfil</a></li>
      </ul>
    </div>
    <div class="card-body">
@@ -39,27 +39,27 @@
                 <form class="border px-4 pt-2 pb-3" method="POST" action="{{route('user-profile-update',$profile->id)}}">
                     @csrf
                     <div class="form-group">
-                        <label for="inputTitle" class="col-form-label">Name</label>
-                      <input id="inputTitle" type="text" name="name" placeholder="Enter name"  value="{{$profile->name}}" class="form-control">
+                        <label for="inputTitle" class="col-form-label">Nombre</label>
+                      <input id="inputTitle" type="text" name="name" placeholder="Ingresa tu nombre"  value="{{$profile->name}}" class="form-control">
                       @error('name')
                       <span class="text-danger">{{$message}}</span>
                       @enderror
                       </div>
               
                       <div class="form-group">
-                          <label for="inputEmail" class="col-form-label">Email</label>
-                        <input id="inputEmail" disabled type="email" name="email" placeholder="Enter email"  value="{{$profile->email}}" class="form-control">
+                          <label for="inputEmail" class="col-form-label">Correo</label>
+                        <input id="inputEmail" disabled type="email" name="email" placeholder="Ingresar tu correo"  value="{{$profile->email}}" class="form-control">
                         @error('email')
                         <span class="text-danger">{{$message}}</span>
                         @enderror
                       </div>
               
                       <div class="form-group">
-                      <label for="inputPhoto" class="col-form-label">Photo</label>
+                      <label for="inputPhoto" class="col-form-label">Imagen</label>
                       <div class="input-group">
                           <span class="input-group-btn">
                               <a id="lfm" data-input="thumbnail" data-preview="holder" class="btn btn-primary">
-                              <i class="fa fa-picture-o"></i> Choose
+                              <i class="fa fa-picture-o"></i> Elegir
                               </a>
                           </span>
                           <input id="thumbnail" class="form-control" type="text" name="photo" value="{{$profile->photo}}">
@@ -69,18 +69,22 @@
                         @enderror
                       </div>
                       <div class="form-group">
-                          <label for="role" class="col-form-label">Role</label>
+                          <label for="role" class="col-form-label">Rol</label>
                           <select name="role" class="form-control">
-                              <option value="">-----Select Role-----</option>
+                              <option value="">-----Selecciona un Rol-----</option>
                                   <option value="admin" {{(($profile->role=='admin')? 'selected' : '')}}>Admin</option>
-                                  <option value="user" {{(($profile->role=='user')? 'selected' : '')}}>User</option>
+                                  <option value="user" {{(($profile->role=='user')? 'selected' : '')}}>Usuario</option>
                           </select>
                         @error('role')
                         <span class="text-danger">{{$message}}</span>
                         @enderror
                         </div>
 
+<<<<<<< HEAD
+                        <button type="submit" class="btn btn-success btn-sm">Actualizar</button>
+=======
                         <button type="submit" class="btn btn-success btn-sm" aria-label="Update">Update</button>
+>>>>>>> 6ef68cfb76da90f7c6f0b47861090b4dac5b4941
                 </form>
             </div>
         </div>

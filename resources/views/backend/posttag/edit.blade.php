@@ -3,31 +3,35 @@
 @section('main-content')
 
 <div class="card">
-    <h5 class="card-header">Edit Post Tag</h5>
+    <h5 class="card-header">Edita el Post de etiqueta</h5>
     <div class="card-body">
       <form method="post" action="{{route('post-tag.update',$postTag->id)}}">
         @csrf 
         @method('PATCH')
         <div class="form-group">
-          <label for="inputTitle" class="col-form-label">Title</label>
-          <input id="inputTitle" type="text" name="title" placeholder="Enter title"  value="{{$postTag->title}}" class="form-control">
+          <label for="inputTitle" class="col-form-label">Titulo</label>
+          <input id="inputTitle" type="text" name="title" placeholder="Ingresar titulo"  value="{{$postTag->title}}" class="form-control">
           @error('title')
           <span class="text-danger">{{$message}}</span>
           @enderror
         </div>
 
         <div class="form-group">
-          <label for="status" class="col-form-label">Status</label>
+          <label for="status" class="col-form-label">Estado</label>
           <select name="status" class="form-control">
-            <option value="active" {{(($postTag->status=='active') ? 'selected' : '')}}>Active</option>
-            <option value="inactive" {{(($postTag->status=='inactive') ? 'selected' : '')}}>Inactive</option>
+            <option value="active" {{(($postTag->status=='active') ? 'selected' : '')}}>Activo</option>
+            <option value="inactive" {{(($postTag->status=='inactive') ? 'selected' : '')}}>Inactivo</option>
           </select>
           @error('status')
           <span class="text-danger">{{$message}}</span>
           @enderror
         </div>
         <div class="form-group mb-3">
+<<<<<<< HEAD
+           <button class="btn btn-success" type="submit">Actualizar</button>
+=======
            <button class="btn btn-success" type="submit" aria-label="Update">Update</button>
+>>>>>>> 6ef68cfb76da90f7c6f0b47861090b4dac5b4941
         </div>
       </form>
     </div>

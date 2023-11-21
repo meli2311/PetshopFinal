@@ -3,39 +3,44 @@
 @section('main-content')
 
 <div class="card">
-    <h5 class="card-header">Add Shipping</h5>
+    <h5 class="card-header">Añadir envío</h5>
     <div class="card-body">
       <form method="post" action="{{route('shipping.store')}}">
         {{csrf_field()}}
         <div class="form-group">
-          <label for="inputTitle" class="col-form-label">Type <span class="text-danger">*</span></label>
-        <input id="inputTitle" type="text" name="type" placeholder="Enter title"  value="{{old('type')}}" class="form-control">
+          <label for="inputTitle" class="col-form-label">Tipo <span class="text-danger">*</span></label>
+        <input id="inputTitle" type="text" name="type" placeholder="Ingresar titulo"  value="{{old('type')}}" class="form-control">
         @error('type')
         <span class="text-danger">{{$message}}</span>
         @enderror
         </div>
 
         <div class="form-group">
-          <label for="price" class="col-form-label">Price <span class="text-danger">*</span></label>
-        <input id="price" type="number" name="price" placeholder="Enter price"  value="{{old('price')}}" class="form-control">
+          <label for="price" class="col-form-label">Precio <span class="text-danger">*</span></label>
+        <input id="price" type="number" name="price" placeholder="Ingresa el precio"  value="{{old('price')}}" class="form-control">
         @error('price')
         <span class="text-danger">{{$message}}</span>
         @enderror
         </div>
         
         <div class="form-group">
-          <label for="status" class="col-form-label">Status <span class="text-danger">*</span></label>
+          <label for="status" class="col-form-label">Estado <span class="text-danger">*</span></label>
           <select name="status" class="form-control">
-              <option value="active">Active</option>
-              <option value="inactive">Inactive</option>
+              <option value="active">Activo</option>
+              <option value="inactive">Inactivo</option>
           </select>
           @error('status')
           <span class="text-danger">{{$message}}</span>
           @enderror
         </div>
         <div class="form-group mb-3">
+<<<<<<< HEAD
+          <button type="reset" class="btn btn-warning">Limpiar</button>
+           <button class="btn btn-success" type="submit">Guardar</button>
+=======
           <button class="btn btn-warning" type="reset" aria-label="Reset">Reset</button>
            <button class="btn btn-success" type="submit" aria-label="Submit">Submit</button>
+>>>>>>> 6ef68cfb76da90f7c6f0b47861090b4dac5b4941
         </div>
       </form>
     </div>
