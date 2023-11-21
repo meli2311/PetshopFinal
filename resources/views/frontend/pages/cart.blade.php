@@ -79,11 +79,7 @@
 										<td></td>
 										<td></td>
 										<td class="float-right">
-<<<<<<< HEAD
-											<button class="btn float-right" type="submit">Actualizar</button>
-=======
 											<button class="btn float-right" type="submit" aria-label="Update">Update</button>
->>>>>>> 6ef68cfb76da90f7c6f0b47861090b4dac5b4941
 										</td>
 									</tr>
 								@else
@@ -111,13 +107,8 @@
 									<div class="coupon">
 									<form action="{{route('coupon-store')}}" method="POST">
 											@csrf
-<<<<<<< HEAD
-											<input name="code" placeholder="Ingresa tu cupon">
-											<button class="btn">Aplicar</button>
-=======
 											<input name="code" placeholder="Enter Your Coupon">
 											<button class="btn" aria-label="Apply">Apply</button>
->>>>>>> 6ef68cfb76da90f7c6f0b47861090b4dac5b4941
 										</form>
 									</div>
 									{{-- <div class="checkbox">`

@@ -11,13 +11,8 @@
                         <p>Suscríbete a nuestro boletin informativo y obtén <span>10%</span> descuento en tu primera compra</p>
                         <form action="{{route('subscribe')}}" method="post" class="newsletter-inner">
                             @csrf
-<<<<<<< HEAD
-                            <input name="email" placeholder="Ingrese su correo" required="" type="email">
-                            <button class="btn" type="submit">Suscribete</button>
-=======
                             <input name="email" placeholder="Your email address" required="" type="email">
                             <button class="btn" type="submit" aria-label="Suscribete">Suscribete</button>
->>>>>>> 6ef68cfb76da90f7c6f0b47861090b4dac5b4941
                         </form>
                     </div>
                     <!-- End Newsletter Inner -->

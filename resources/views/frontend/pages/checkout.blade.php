@@ -218,11 +218,7 @@
                                 <div class="single-widget get-button">
                                     <div class="content">
                                         <div class="button">
-<<<<<<< HEAD
-                                            <button type="submit" class="btn"> Proceder con la compra</button>
-=======
                                             <button type="submit" class="btn" aria-label="Pase por caja">proceed to checkout</button>
->>>>>>> 6ef68cfb76da90f7c6f0b47861090b4dac5b4941
                                         </div>
                                     </div>
                                 </div>

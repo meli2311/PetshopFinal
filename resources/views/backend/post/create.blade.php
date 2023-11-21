@@ -94,13 +94,8 @@
           @enderror
         </div>
         <div class="form-group mb-3">
-<<<<<<< HEAD
-          <button type="reset" class="btn btn-warning">Limpiar</button>
-           <button class="btn btn-success" type="submit">Guardar</button>
-=======
           <button type="reset" class="btn btn-warning" aria-label="Reset">Reset</button>
            <button class="btn btn-success" type="submit" aria-label="Submit">Submit</button>
->>>>>>> 6ef68cfb76da90f7c6f0b47861090b4dac5b4941
         </div>
       </form>
     </div>

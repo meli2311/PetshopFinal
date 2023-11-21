@@ -31,7 +31,7 @@
             </div>
 
             <div class="flex justify-end mt-4">
-                <button>Confirm</button>
+                <button aria-label="Confirm">Confirm</button>
             </div>
         </form>
     </div>

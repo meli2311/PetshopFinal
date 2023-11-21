@@ -29,11 +29,7 @@
                     <input type="text" class="form-control p-2"  name="order_number" placeholder="Ingresa tu número de pedido">
                 </div>
                 <div class="col-md-8 form-group">
-<<<<<<< HEAD
-                    <button type="submit" value="submit" class="btn submit_btn">Ver Seguimiento de pedido</button>
-=======
                     <button type="submit" value="submit" class="btn submit_btn" aria-label="Track Order">Track Order</button>
->>>>>>> 6ef68cfb76da90f7c6f0b47861090b4dac5b4941
                 </div>
             </form>
         </div>
