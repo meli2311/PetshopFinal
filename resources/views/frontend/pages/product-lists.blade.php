@@ -79,7 +79,7 @@
 											@endphp
 											<div id="slider-range" data-min="0" data-max="{{$max}}"></div>
 											<div class="product_filter">
-											<button type="submit" class="filter_button">Filtro</button>
+											<button type="submit" class="filter_button" aria-label="Filtro">Filtro</button>
 											<div class="label-input">
 												<span>Rango:</span>
 												<input style="" type="text" id="amount" readonly/>
@@ -329,14 +329,14 @@
 														<!-- Input Order -->
 														<div class="input-group">
 															<div class="button minus">
-																<button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+																<button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]" aria-label="minus">
 																	<i class="ti-minus"></i>
 																</button>
 															</div>
 															<input type="hidden" name="slug" value="{{$product->slug}}">
 															<input type="text" name="quant[1]" class="input-number"  data-min="1" data-max="1000" value="1">
 															<div class="button plus">
-																<button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
+																<button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]" aria-label="plus">
 																	<i class="ti-plus"></i>
 																</button>
 															</div>
@@ -344,7 +344,7 @@
 														<!--/ End Input Order -->
 													</div>
 													<div class="add-to-cart">
-														<button type="submit" class="btn">Agregar al carrito</button>
+														<button type="submit" class="btn" aria-label="Agregar al carrito">Agregar al carrito</button>
 														<a href="{{route('add-to-wishlist',$product->slug)}}" class="btn min"><i class="ti-heart"></i></a>
 													</div>
 												</form>

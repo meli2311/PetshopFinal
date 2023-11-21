@@ -53,14 +53,14 @@
 											<td class="qty" data-title="Qty"><!-- Input Order -->
 												<div class="input-group">
 													<div class="button minus">
-														<button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[{{$key}}]">
+														<button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[{{$key}}]" aria-label="minus">
 															<i class="ti-minus"></i>
 														</button>
 													</div>
 													<input type="text" name="quant[{{$key}}]" class="input-number"  data-min="1" data-max="100" value="{{$cart->quantity}}">
 													<input type="hidden" name="qty_id[]" value="{{$cart->id}}">
 													<div class="button plus">
-														<button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[{{$key}}]">
+														<button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[{{$key}}]" aria-label="plus">
 															<i class="ti-plus"></i>
 														</button>
 													</div>
@@ -79,7 +79,7 @@
 										<td></td>
 										<td></td>
 										<td class="float-right">
-											<button class="btn float-right" type="submit">Update</button>
+											<button class="btn float-right" type="submit" aria-label="Update">Update</button>
 										</td>
 									</track>
 								@else
@@ -108,7 +108,7 @@
 									<form action="{{route('coupon-store')}}" method="POST">
 											@csrf
 											<input name="code" placeholder="Enter Your Coupon">
-											<button class="btn">Apply</button>
+											<button class="btn" aria-label="Apply">Apply</button>
 										</form>
 									</div>
 									{{-- <div class="checkbox">`

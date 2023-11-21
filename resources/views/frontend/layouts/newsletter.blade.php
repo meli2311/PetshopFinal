@@ -12,7 +12,7 @@
                         <form action="{{route('subscribe')}}" method="post" class="newsletter-inner">
                             @csrf
                             <input name="email" placeholder="Your email address" required="" type="email">
-                            <button class="btn" type="submit">Suscribete</button>
+                            <button class="btn" type="submit" aria-label="Suscribete">Suscribete</button>
                         </form>
                     </div>
                     <!-- End Newsletter Inner -->

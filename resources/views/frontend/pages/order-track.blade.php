@@ -30,7 +30,7 @@
                     <input type="text" class="form-control p-2"  name="order_number" placeholder="Enter your order number">
                 </div>
                 <div class="col-md-8 form-group">
-                    <button type="submit" value="submit" class="btn submit_btn">Track Order</button>
+                    <button type="submit" value="submit" class="btn submit_btn" aria-label="Track Order">Track Order</button>
                 </div>
             </form>
         </div>

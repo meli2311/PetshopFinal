@@ -2,10 +2,13 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <!-- Descripcion de la web - posicionamiento de web (SEO) -->
+    <meta name="description" content="Tienda online con todo lo que necesitan tus mascotas: comida, accesorios, juguetes y artículos de higiene de primera calidad para perros y gatos">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 

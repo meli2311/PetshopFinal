@@ -80,7 +80,7 @@
                         @enderror
                         </div>
 
-                        <button type="submit" class="btn btn-success btn-sm">Update</button>
+                        <button type="submit" class="btn btn-success btn-sm" aria-label="Update">Update</button>
                 </form>
             </div>
         </div>
