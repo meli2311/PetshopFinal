@@ -3,49 +3,76 @@
 
 ## ======= ADMIN =======
 
-- Admin roles, permission
-- Product manager
-- Media manager using unisharp laravel file manager
-- Banner manager
-- Order management
-- Category management
-- Brand management
-- Shipping Management
-- Review Management
-- Blog, Category & Tag manager
-- User Management
-- Coupon Management
-- System config: email setting, info shop, maintain status,...
-- Line Chart & Pie chart ...
-- Generate order in pdf form...
-- Real time message & notification
-- Profile Settings
-Many more....
+- Funciones y permisos de administrador
+- Gestor de productos
+- Gestor de medios usando unisharp laravel file manager
+- Gestor de banners
+- Gestión de pedidos
+- Gestión de categorías
+- Gestión de marcas
+- Gestión de envíos
+- Gestión de reseñas
+- Gestión de blogs, categorías y etiquetas
+- Gestión de usuarios
+- Gestión de cupones
+- Configuración del sistema: configuración de correo electrónico, tienda de información, mantener el estado,...
+- Gráfico de líneas y gráfico circular ...
+- Generar orden en formato pdf ...
+- Mensajes y notificaciones en tiempo real
+- Configuración del perfil
+Muchos más....
 
 
-## ======= USER DASHBOARD =======
+## ======= PANEL DE CONTROL DEL USUARIO =======
 
+- Gestión de pedidos
+- Gestión de revisiones
+- Gestión de comentarios
+- Configuración del perfil
 
-- Order management
-- Review Management
-- Comment Management
-- Profile Settings
+### levantamiento del proyecto :
 
-### Set up :
+1. Clonar el repositorio
+2. En la terminal ```composer install```
 
-1. Clone the repo and cd into it
-2. In your terminal ```composer install```
-3. Rename or copy ```.env.example``` file to ``.env``
+3. Renombre y copie ```.env.example``` en el archivo ``.env``
 4. php artisan key:generate
-5. Set your database credentials in your ```.env``` file
-6. Set your Braintree credentials in your ```.env``` file if you want to use PayPal
-7. Import db file(```database/e-shop.sql```) into your database (```mysql,sql```)
+5. Establece las credenciales de la base de datos en el archivo ``.env``.
+6. Establece tus credenciales de Braintree en tu archivo ```.env`` si quieres utilizar PayPal
+7. Importar el archivo de db(```database/e-shop.sql```)
 8. ```npm install```
 9. ```npm run watch```
-10. run command[laravel file manager]:-  ```php artisan storage:link```
+10. ```php artisan storage:link```
 11. Edit ```.env``` file :- remove APP_URL
-10. ```php artisan serve``` or use virtual host
-11. Visit ```localhost:8000``` in your browser
-12. Visit /admin if you want to access the admin panel. Admin Email/Password: ```admin@gmail.com```/```1111```. User Email/Password: ```user@gmail.com```/```1111```
+10. ```php artisan serve```
+11. Ingrese a ```localhost:8000``` en el navegador de su preferencia
+12. Visite /admin si desea acceder al panel de administración. 
+13. Credenciales
+- Admin (Email/Password): ```admin@gmail.com```/```1111```. 
+- Usuario (Email/Password): ```user@gmail.com```/```1111```
 
-<p style="text-align:center">Thank You so much for your time !!!</p>
+#### Comandos adicionales para solucionar algun error que pueda figurar
+
+- composer dump-autoload
+- composer update --no-scripts
+- composer require srmklive/paypal:~1.0
+- php artisan vendor:publish --provider "Srmklive\PayPal\Providers\PayPalServiceProvider"
+- composer dump-autoload
+- composer install
+- php artisan cache:clear
+- php artisan config:clear
+- php artisan optimize
+- php artisan clear-compiled
+
+
+**Estructura del storage**
+
+La siguiente estructura debe estar presente en caso no se genere automaticamente debera crearse manualmente
+
+- `storage`
+    - `framework`
+        - `#cache`
+        - `#sessions`
+        - `#views`
+    - `logs`
+
