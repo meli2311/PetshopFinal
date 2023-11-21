@@ -10,8 +10,8 @@
     <!-- Descripcion de la web - posicionamiento de web (SEO) -->
     <meta name="description" content="Tienda online con todo lo que necesitan tus mascotas: comida, accesorios, juguetes y artículos de higiene de primera calidad para perros y gatos">
 
-    <!-- Favicon -->
-    
+    <!-- Theme color navigation -->
+    <meta name="theme-color" content="#e2e8f0"/>
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 

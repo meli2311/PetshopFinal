@@ -13,7 +13,7 @@
         <div class="carousel-inner" role="listbox">
                 @foreach($banners as $key=>$banner)
                 <div class="carousel-item {{(($key==0)? 'active' : '')}}">
-                    <img class="first-slide" src="{{$banner->photo}}" alt="First slide" loading="lazy" draggable="false">
+                    <img class="first-slide" src="{{$banner->photo}}" alt="First slide" draggable="false">
                     <div class="carousel-caption d-none d-md-block text-left">
                         <h1 class="wow fadeInDown">{{$banner->title}}</h1>
                         <p>{!! html_entity_decode($banner->description) !!}</p>
@@ -49,9 +49,9 @@
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="single-banner">
                                 @if($cat->photo)
-                                    <img src="{{$cat->photo}}" alt="{{$cat->photo}}" loading="lazy" draggable="false">
+                                    <img src="{{$cat->photo}}" alt="{{$cat->photo}}" draggable="false">
                                 @else
-                                    <img src="https://via.placeholder.com/600x370" alt="image" loading="lazy" draggable="false">
+                                    <img src="https://via.placeholder.com/600x370" alt="image" draggable="false">
                                 @endif
                                 <div class="content">
                                     <h3>{{$cat->title}}</h3>
