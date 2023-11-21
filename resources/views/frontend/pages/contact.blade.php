@@ -67,7 +67,7 @@
 										</div>
 										<div class="col-12">
 											<div class="form-group button">
-												<button type="submit" class="btn ">Send Message</button>
+												<button type="submit" class="btn" aria-label="Send Message">Send Message</button>
 											</div>
 										</div>
 									</div>

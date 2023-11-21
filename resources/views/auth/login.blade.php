@@ -54,7 +54,7 @@
                             </label>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-user btn-block">
+                    <button type="submit" class="btn btn-primary btn-user btn-block" aria-label="Login">
                       Login
                     </button>
                   </form>

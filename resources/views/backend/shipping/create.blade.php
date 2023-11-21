@@ -34,8 +34,8 @@
           @enderror
         </div>
         <div class="form-group mb-3">
-          <button type="reset" class="btn btn-warning">Reset</button>
-           <button class="btn btn-success" type="submit">Submit</button>
+          <button class="btn btn-warning" type="reset" aria-label="Reset">Reset</button>
+           <button class="btn btn-success" type="submit" aria-label="Submit">Submit</button>
         </div>
       </form>
     </div>

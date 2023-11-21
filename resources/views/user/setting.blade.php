@@ -92,7 +92,7 @@
           @enderror
         </div>
         <div class="form-group mb-3">
-           <button class="btn btn-success" type="submit">Update</button>
+           <button class="btn btn-success" type="submit" aria-label="Update">Update</button>
         </div>
       </form>
     </div>

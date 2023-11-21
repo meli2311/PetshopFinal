@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name='copyright' content=''>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
 	<meta name="keywords" content="online shop, purchase, cart, ecommerce site, best online shopping">
 	<meta name="description" content="{{$product_detail->summary}}">
 	<meta property="og:url" content="{{route('product-detail',$product_detail->slug)}}">
@@ -124,14 +124,14 @@
 														<!-- Input Order -->
 														<div class="input-group">
 															<div class="button minus">
-																<button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+																<button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]" aria-label="minus">
 																	<i class="ti-minus"></i>
 																</button>
 															</div>
 															<input type="hidden" name="slug" value="{{$product_detail->slug}}">
 															<input type="text" name="quant[1]" class="input-number"  data-min="1" data-max="1000" value="1" id="quantity">
 															<div class="button plus">
-																<button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
+																<button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]" aria-label="plus">
 																	<i class="ti-plus"></i>
 																</button>
 															</div>
@@ -139,7 +139,7 @@
 													<!--/ End Input Order -->
 													</div>
 													<div class="add-to-cart mt-4">
-														<button type="submit" class="btn">Añadir a la cesta</button>
+														<button type="submit" class="btn" aria-label="Añadir a la cesta">Añadir a la cesta</button>
 														<a href="{{route('add-to-wishlist',$product_detail->slug)}}" class="btn min"><i class="ti-heart"></i></a>
 													</div>
 												</form>
@@ -228,7 +228,7 @@
 																		</div>
 																		<div class="col-lg-12 col-12">
 																			<div class="form-group button5">	
-																				<button type="submit" class="btn">Ingresar</button>
+																				<button type="submit" class="btn" aria-label="Ingresar">Ingresar</button>
 																			</div>
 																		</div>
 																	</div>
@@ -443,13 +443,13 @@
                                 <!-- Input Order -->
                                 <div class="input-group">
                                     <div class="button minus">
-                                        <button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                        <button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]" aria-label="minus">
                                             <i class="ti-minus"></i>
                                         </button>
 									</div>
                                     <input type="text" name="qty" class="input-number"  data-min="1" data-max="1000" value="1">
                                     <div class="button plus">
-                                        <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
+                                        <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]" aria-label="plus">
                                             <i class="ti-plus"></i>
                                         </button>
                                     </div>

@@ -51,7 +51,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary" aria-label="{{ __('Reset Password') }}">
                                     {{ __('Reset Password') }}
                                 </button>
                             </div>

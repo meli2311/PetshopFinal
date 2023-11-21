@@ -34,7 +34,7 @@
                     @error('password_confirmation')
                         <span class="text-danger">{{ $message }}</span>
                     @enderror
-                    <button type="submit" x-primary-button class="ml-4">Registrar</button>
+                    <button type="submit" x-primary-button class="ml-4" aria-label="Registrar">Registrar</button>
                     <a class="loginBtn loginBtn--google" href="{{ route('login.redirect', 'google') }}"
                         class="btn btn-google">Ingresar con google</a>
 
@@ -58,7 +58,7 @@
                     @error('password')
                         <span class="text-danger">{{ $message }}</span>
                     @enderror
-                    <button type="submit" x-primary-button class="ml-3">Ingresar</button>
+                    <button type="submit" x-primary-button class="ml-3" aria-label="Ingresar">Ingresar</button>
                     <a class="loginBtn loginBtn--google" href="{{ route('login.redirect', 'google') }}"
                         class="btn btn-google">Ingresar con google</a>
                         @if (Route::has('password.request'))
@@ -74,13 +74,13 @@
                     <div class="overlay-panel overlay-left">
                         <h1>Bienvenido!</h1>
                         <p>Para mantenerse conectado con nosotros, inicie sesión con su información personal</p>
-                        <button class="ghost" id="signIn">Iniciar Sesion</button>
+                        <button class="ghost" id="signIn" aria-label="Iniciar Sesion">Iniciar Sesion</button>
     
                     </div>
                     <div class="overlay-panel overlay-right">
                         <h1>Hello, PetLovers!</h1>
                         <p>Ingresa tus datos personales y comienza esta maravillosa experiencia.</p>
-                        <button class="ghost" id="signUp">Registrarse</button>
+                        <button class="ghost" id="signUp" aria-label="Registrarse">Registrarse</button>
                     </div>
                 </div>
             </div>

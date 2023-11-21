@@ -93,7 +93,7 @@
                                                 </div>
                                                 <div class="col-12">
                                                     <div class="form-group button">
-                                                        <button type="submit" class="btn"><span class="comment_btn comment">Publicar comentario</span><span class="comment_btn reply" style="display: none;">Responder comentario</span></button>
+                                                        <button type="submit" class="btn" aria-label="Publicar comentario"><span class="comment_btn comment">Publicar comentario</span><span class="comment_btn reply" style="display: none;">Responder comentario</span></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -129,7 +129,7 @@
                         <div class="single-widget search">
                             <form class="form" method="GET" action="{{route('blog.search')}}">
                                 <input type="text" placeholder="Search Here..." name="search">
-                                <button class="button" type="sumbit"><i class="fa fa-search"></i></button>
+                                <button class="button" type="sumbit" aria-label="search"><i class="fa fa-search"></i></button>
                             </form>
                         </div>
                         <!--/ End Single Widget -->
@@ -188,7 +188,7 @@
                                     @csrf
                                     <div class="form-inner">
                                         <input type="email" name="email" placeholder="Enter your email">
-                                        <button type="submit" class="btn mt-2">Ingresar</button>
+                                        <button type="submit" class="btn mt-2" aria-label="Ingresar">Ingresar</button>
                                     </div>
                                 </form>
                             </div>

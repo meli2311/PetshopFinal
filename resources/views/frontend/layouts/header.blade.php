@@ -61,7 +61,7 @@
                         <div class="search-top">
                             <form class="search-form">
                                 <input type="text" placeholder="Search here..." name="search">
-                                <button value="search" type="submit"><i class="ti-search"></i></button>
+                                <button value="search" type="submit" aria-label="search"><i class="ti-search"></i></button>
                             </form>
                         </div>
                         <!--/ End Search Form -->
@@ -81,7 +81,7 @@
                             <form method="POST" action="{{route('product.search')}}">
                                 @csrf
                                 <input name="search" placeholder="Search Products Here....." type="search">
-                                <button class="btnn" type="submit"><i class="ti-search"></i></button>
+                                <button class="btnn" type="submit" aria-label="search"><i class="ti-search"></i></button>
                             </form>
                         </div>
                     </div>
