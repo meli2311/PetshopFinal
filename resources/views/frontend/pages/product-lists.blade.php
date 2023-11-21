@@ -112,7 +112,7 @@
                                         @endphp
                                         <div class="single-post first">
                                             <div class="image">
-                                                <img src="{{$photo[0]}}" alt="{{$photo[0]}}">
+                                                <img src="{{$photo[0]}}" alt="{{$photo[0]}}" loading="lazy" draggable="false">
                                             </div>
                                             <div class="content">
                                                 <h5><a href="{{route('product-detail',$product->slug)}}">{{$product->title}}</a></h5>
@@ -190,8 +190,8 @@
 															@php 
 																$photo=explode(',',$product->photo);
 															@endphp
-															<img class="default-img" src="{{$photo[0]}}" alt="{{$photo[0]}}">
-															<img class="hover-img" src="{{$photo[0]}}" alt="{{$photo[0]}}">
+															<img class="default-img" src="{{$photo[0]}}" alt="{{$photo[0]}}" loading="lazy" draggable="false">
+															<img class="hover-img" src="{{$photo[0]}}" alt="{{$photo[0]}}" loading="lazy" draggable="false">
 															</a>
 															<div class="button-head">
 																<div class="product-action">
@@ -262,7 +262,7 @@
 														@endphp
 														@foreach($photo as $data)
 															<div class="single-slider">
-																<img src="{{$data}}" alt="{{$data}}">
+																<img src="{{$data}}" alt="{{$data}}" loading="lazy" draggable="false">
 															</div>
 														@endforeach
 													</div>

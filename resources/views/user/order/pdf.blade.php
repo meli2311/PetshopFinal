@@ -71,7 +71,7 @@
 </style>
   <div class="invoice-header">
     <div class="float-left site-logo">
-      <img src="{{asset('backend/img/logo.png')}}" alt="">
+      <img src="{{asset('backend/img/logo.png')}}" alt="" loading="lazy" draggable="false">
     </div>
     <div class="float-right site-address">
       <h4>{{env('APP_NAME')}}</h4>
@@ -101,7 +101,6 @@
     <div class="invoice-right-top float-right" class="text-right">
       <h3>Invoice #{{$order->cart_id}}</h3>
       <p>{{ $order->created_at->format('D d m Y') }}</p>
-      {{-- <img class="img-responsive" src="data:image/png;base64, {{ base64_encode(QrCode::format('png')->size(150)->generate(route('admin.product.order.show', $order->id )))}}"> --}}
     </div>
     <div class="clearfix"></div>
   </div>

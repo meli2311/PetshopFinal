@@ -41,7 +41,7 @@
 										@php 
 											$photo=explode(',',$wishlist->product['photo']);
 										@endphp
-										<td class="image" data-title="No"><img src="{{$photo[0]}}" alt="{{$photo[0]}}"></td>
+										<td class="image" data-title="No"><img src="{{$photo[0]}}" alt="{{$photo[0]}}" loading="lazy" draggable="false"></td>
 										<td class="product-des" data-title="Description">
 											<p class="product-name"><a href="{{route('product-detail',$wishlist->product['slug'])}}">{{$wishlist->product['title']}}</a></p>
 											<p class="product-des">{!!($wishlist['summary']) !!}</p>
@@ -133,16 +133,16 @@
 									<div class="product-gallery">
 										<div class="quickview-slider-active">
 											<div class="single-slider">
-												<img src="images/modal1.jpg" alt="#">
+												<img src="images/modal1.jpg" alt="#" loading="lazy" draggable="false">
 											</div>
 											<div class="single-slider">
-												<img src="images/modal2.jpg" alt="#">
+												<img src="images/modal2.jpg" alt="#" loading="lazy" draggable="false">
 											</div>
 											<div class="single-slider">
-												<img src="images/modal3.jpg" alt="#">
+												<img src="images/modal3.jpg" alt="#" loading="lazy" draggable="false">
 											</div>
 											<div class="single-slider">
-												<img src="images/modal4.jpg" alt="#">
+												<img src="images/modal4.jpg" alt="#" loading="lazy" draggable="false">
 											</div>
 										</div>
 									</div>

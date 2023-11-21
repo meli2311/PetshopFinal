@@ -13,7 +13,7 @@
         <div class="carousel-inner" role="listbox">
                 @foreach($banners as $key=>$banner)
                 <div class="carousel-item {{(($key==0)? 'active' : '')}}">
-                    <img class="first-slide" src="{{$banner->photo}}" alt="First slide">
+                    <img class="first-slide" src="{{$banner->photo}}" alt="First slide" loading="lazy" draggable="false">
                     <div class="carousel-caption d-none d-md-block text-left">
                         <h1 class="wow fadeInDown">{{$banner->title}}</h1>
                         <p>{!! html_entity_decode($banner->description) !!}</p>
@@ -49,9 +49,9 @@
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="single-banner">
                                 @if($cat->photo)
-                                    <img src="{{$cat->photo}}" alt="{{$cat->photo}}">
+                                    <img src="{{$cat->photo}}" alt="{{$cat->photo}}" loading="lazy" draggable="false">
                                 @else
-                                    <img src="https://via.placeholder.com/600x370" alt="#">
+                                    <img src="https://via.placeholder.com/600x370" alt="image" loading="lazy" draggable="false">
                                 @endif
                                 <div class="content">
                                     <h3>{{$cat->title}}</h3>
@@ -114,8 +114,8 @@
                                                     $photo=explode(',',$product->photo);
                                                 // dd($photo);
                                                 @endphp
-                                                <img class="default-img" src="{{$photo[0]}}" alt="{{$photo[0]}}">
-                                                <img class="hover-img" src="{{$photo[0]}}" alt="{{$photo[0]}}">
+                                                <img class="default-img" src="{{$photo[0]}}" alt="{{$photo[0]}}" loading="lazy" draggable="false">
+                                                <img class="hover-img" src="{{$photo[0]}}" alt="{{$photo[0]}}" loading="lazy" draggable="false">
                                                 @if($product->stock<=0)
                                                     <span class="out-of-stock">Venta</span>
                                                 @elseif($product->condition=='new')
@@ -179,7 +179,7 @@
                             @php
                                 $photo=explode(',',$data->photo);
                             @endphp
-                            <img src="{{$photo[0]}}" alt="{{$photo[0]}}">
+                            <img src="{{$photo[0]}}" alt="{{$photo[0]}}" loading="lazy" draggable="false">
                             <div class="content">
                                  {{-- <p>{{$data->cat_info['title']}}</p>  --}}
                                 <h3>{{$data->title}} <br>Hasta<span> {{$data->discount}}%</span></h3>
@@ -218,8 +218,8 @@
                                         $photo=explode(',',$product->photo);
                                     // dd($photo);
                                     @endphp
-                                    <img class="default-img" src="{{$photo[0]}}" alt="{{$photo[0]}}">
-                                    <img class="hover-img" src="{{$photo[0]}}" alt="{{$photo[0]}}">
+                                    <img class="default-img" src="{{$photo[0]}}" alt="{{$photo[0]}}" loading="lazy" draggable="false">
+                                    <img class="hover-img" src="{{$photo[0]}}" alt="{{$photo[0]}}" loading="lazy" draggable="false">
                                     {{-- <span class="out-of-stock">Hot</span> --}}
                                 </a>
                                 <div class="button-head">
@@ -280,7 +280,7 @@
                                             $photo=explode(',',$product->photo);
                                             // dd($photo);
                                         @endphp
-                                        <img src="{{$photo[0]}}" alt="{{$photo[0]}}">
+                                        <img src="{{$photo[0]}}" alt="{{$photo[0]}}" loading="lazy" draggable="false">
                                         <a href="{{route('add-to-cart',$product->slug)}}" class="buy"><i class="fa fa-shopping-bag"></i></a>
                                     </div>
                                 </div>
@@ -319,7 +319,7 @@
                     <div class="col-lg-4 col-md-6 col-12">
                         <!-- Start Single Blog  -->
                         <div class="shop-single-blog">
-                            <img src="{{$post->photo}}" alt="{{$post->photo}}">
+                            <img src="{{$post->photo}}" alt="{{$post->photo}}" loading="lazy" draggable="false">
                             <div class="content">
                                 <p class="date">{{$post->created_at->format('d M , Y. D')}}</p>
                                 <a href="{{route('blog.detail',$post->slug)}}" class="title">{{$post->title}}</a>
@@ -404,7 +404,7 @@
                                                 @endphp
                                                 @foreach($photo as $data)
                                                     <div class="single-slider">
-                                                        <img src="{{$data}}" alt="{{$data}}">
+                                                        <img src="{{$data}}" alt="{{$data}}" loading="lazy" draggable="false">
                                                     </div>
                                                 @endforeach
                                             </div>

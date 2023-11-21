@@ -5,9 +5,9 @@
     <div class="comment-list">
         <div class="single-comment">
             @if($comment->user_info['photo'])
-                <img src="{{$comment->user_info['photo']}}" alt="#">
+                <img src="{{$comment->user_info['photo']}}" alt="#" loading="lazy" draggable="false">
             @else 
-                <img src="{{asset('backend/img/avatar.png')}}" alt="">
+                <img src="{{asset('backend/img/avatar.png')}}" alt="" loading="lazy" draggable="false">
             @endif
             <div class="content">
                 {{-- {{$post}} --}}

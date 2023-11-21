@@ -42,7 +42,7 @@
             </span>
             <input id="thumbnail" class="form-control" type="text" name="photo" value="{{$user->photo}}">
         </div>
-        <img id="holder" style="margin-top:15px;max-height:100px;">
+        <img id="holder" style="margin-top:15px;max-height:100px;" loading="lazy" draggable="false">
           @error('photo')
           <span class="text-danger">{{$message}}</span>
           @enderror

@@ -52,7 +52,7 @@
 													@endphp
 													@foreach($photo as $data)
 														<li data-thumb="{{$data}}" rel="adjustX:10, adjustY:">
-															<img src="{{$data}}" alt="{{$data}}">
+															<img src="{{$data}}" alt="{{$data}}" loading="lazy" draggable="false">
 														</li>
 													@endforeach
 												</ul>
@@ -259,9 +259,9 @@
 																	<div class="single-rating">
 																		<div class="rating-author">
 																			@if($data->user_info['photo'])
-																			<img src="{{$data->user_info['photo']}}" alt="{{$data->user_info['photo']}}">
+																			<img src="{{$data->user_info['photo']}}" alt="{{$data->user_info['photo']}}" loading="lazy" draggable="false">
 																			@else 
-																			<img src="{{asset('backend/img/avatar.png')}}" alt="Profile.jpg">
+																			<img src="{{asset('backend/img/avatar.png')}}" alt="Profile.jpg" loading="lazy" draggable="false">
 																			@endif
 																		</div>
 																		<div class="rating-des">
@@ -326,8 +326,8 @@
 											@php 
 												$photo=explode(',',$data->photo);
 											@endphp
-                                            <img class="default-img" src="{{$photo[0]}}" alt="{{$photo[0]}}">
-                                            <img class="hover-img" src="{{$photo[0]}}" alt="{{$photo[0]}}">
+                                            <img class="default-img" src="{{$photo[0]}}" alt="{{$photo[0]}}" loading="lazy" draggable="false">
+                                            <img class="hover-img" src="{{$photo[0]}}" alt="{{$photo[0]}}" loading="lazy" draggable="false">
                                             <span class="price-dec">{{$data->discount}} % Off</span>
                                                                     {{-- <span class="out-of-stock">Hot</span> --}}
                                         </a>
@@ -380,16 +380,16 @@
                             <div class="product-gallery">
                                 <div class="quickview-slider-active">
                                     <div class="single-slider">
-                                        <img src="images/modal1.png" alt="#">
+                                        <img src="images/modal1.png" alt="#" loading="lazy" draggable="false">
                                     </div>
                                     <div class="single-slider">
-                                        <img src="images/modal2.png" alt="#">
+                                        <img src="images/modal2.png" alt="#" loading="lazy" draggable="false">
                                     </div>
                                     <div class="single-slider">
-                                        <img src="images/modal3.png" alt="#">
+                                        <img src="images/modal3.png" alt="#" loading="lazy" draggable="false">
                                     </div>
                                     <div class="single-slider">
-                                        <img src="images/modal4.png" alt="#">
+                                        <img src="images/modal4.png" alt="#" loading="lazy" draggable="false">
                                     </div>
                                 </div>
                             </div>
