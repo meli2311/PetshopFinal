@@ -9,7 +9,7 @@
          </div>
      </div>
     <div class="card-header py-3">
-      <h6 class="m-0 font-weight-bold text-primary float-left">Review Lists</h6>
+      <h6 class="m-0 font-weight-bold text-primary float-left">Lista de reseñas</h6>
     </div>
     <div class="card-body">
       <div class="table-responsive">
@@ -17,34 +17,34 @@
         <table class="table table-bordered" id="order-dataTable" width="100%" cellspacing="0">
           <thead>
             <tr>
-              <th>S.N.</th>
-              <th>Review By</th>
-              <th>Product Title</th>
-              <th>Review</th>
-              <th>Rate</th>
-              <th>Date</th>
-              <th>Status</th>
-              <th>Action</th>
+              <th>Numero</th>
+              <th>Revisado por</th>
+              <th>Titulo del producto</th>
+              <th>Revisar</th>
+              <th>Tasa</th>
+              <th>Dato</th>
+              <th>Estado</th>
+              <th>Accion</th>
             </tr>
           </thead>
           <tfoot>
             <tr>
-              <th>S.N.</th>
-              <th>Review By</th>
-              <th>Product Title</th>
-              <th>Review</th>
-              <th>Rate</th>
-              <th>Date</th>
-              <th>Status</th>
-              <th>Action</th>
+              <th>Numero</th>
+              <th>Revisado por</th>
+              <th>Titulo del producto</th>
+              <th>Revisar</th>
+              <th>Tasa</th>
+              <th>Dato</th>
+              <th>Estado</th>
+              <th>Accion</th>
               </tr>
           </tfoot>
           <tbody>
             @foreach($reviews as $review)
                 <tr>
                     <td>{{$review->id}}</td>
-                    <td>{{$review->user_info['name']}}</td>
-                    <td>{{$review->product->title}}</td>
+                    <td>{{ $review->user_info['name'] ?? 'N/A' }}</td>
+                    <td>{{ $review->product->title ?? '' }}</td>
                     <td>{{$review->review}}</td>
                     <td>
                      <ul style="list-style:none">
@@ -79,7 +79,7 @@
         </table>
         <span style="float:right">{{$reviews->links()}}</span>
         @else
-          <h6 class="text-center">No reviews found!!!</h6>
+          <h6 class="text-center">¡No se encontraron reseñas!</h6>
         @endif
       </div>
     </div>

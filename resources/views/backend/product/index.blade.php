@@ -10,7 +10,7 @@
      </div>
     <div class="card-header py-3">
       <h6 class="m-0 font-weight-bold text-primary float-left">Lista de productos</h6>
-      <a href="{{route('product.create')}}" class="btn btn-primary btn-sm float-right" data-toggle="tooltip" data-placement="bottom" title="Add User"><i class="fas fa-plus"></i> Add Product</a>
+      <a href="{{route('product.create')}}" class="btn btn-primary btn-sm float-right" data-toggle="tooltip" data-placement="bottom" title="Add User"><i class="fas fa-plus"></i> Agregar productos</a>
     </div>
     <div class="card-body">
       <div class="table-responsive">
@@ -61,17 +61,18 @@
                 <tr>
                     <td>{{$product->id}}</td>
                     <td>{{$product->title}}</td>
-                    {{-- <td>{{$product->cat_info['title']}} --}}
+                    <td>{{$product->cat_info['title']}}
                       <sub>
                           {{$product->sub_cat_info->title ?? ''}}
                       </sub>
                     </td>
                     <td>{{(($product->is_featured==1)? 'Yes': 'No')}}</td>
-                    <td>Rs. {{$product->price}} /-</td>
-                    <td>  {{$product->discount}}% OFF</td>
+                    <td>S/ {{$product->price}}</td>
+                    <td>  {{$product->discount}}% </td>
                     <td>{{$product->size}}</td>
                     <td>{{$product->condition}}</td>
-                    {{-- <td> {{ucfirst($product->brand->title)}}</td> --}}
+                    <<td>{{ ucfirst($product->brand->title ?? '') }}</td>
+
                     <td>
                       @if($product->stock>0)
                       <span class="badge badge-primary">{{$product->stock}}</span>
@@ -111,7 +112,7 @@
         </table>
         <span style="float:right">{{$products->links()}}</span>
         @else
-          <h6 class="text-center">¡¡¡No se encontraron productos!!! Por favor crea producto</h6>
+          <h6 class="text-center">¡¡¡No se encontraron productos!!! Por favor crea un producto</h6>
         @endif
       </div>
     </div>

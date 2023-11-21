@@ -84,7 +84,7 @@
                                                 @php 
                                                     $after_discount=($product_detail->price-(($product_detail->price*$product_detail->discount)/100));
                                                 @endphp
-												<p class="price"><span class="discount">${{number_format($after_discount,2)}}</span><s>${{number_format($product_detail->price,2)}}</s> </p>
+												<p class="price"><span class="discount">S/{{number_format($after_discount,2)}}</span><s>S/{{number_format($product_detail->price,2)}}</s> </p>
 												<p class="description">{!!($product_detail->summary)!!}</p>
 											</div>
 											<!--/ End Description -->
@@ -120,7 +120,7 @@
 												<form action="{{route('single-add-to-cart')}}" method="POST">
 													@csrf 
 													<div class="quantity">
-														<h6>Quantity :</h6>
+														<h6>Cantidad: </h6>
 														<!-- Input Order -->
 														<div class="input-group">
 															<div class="button minus">
@@ -235,7 +235,7 @@
 																</form>
 																@else 
 																<p class="text-center p-5">
-																	Necesitas <a href="{{route('login.form')}}" style="color:rgb(54, 54, 204)">Ingresar</a> oOR <a style="color:blue" href="{{route('register.form')}}">Registrar</a>
+																	Necesitas <a href="{{route('login.form')}}" style="color:rgb(54, 54, 204)">Ingresar</a> o <a style="color:blue" href="{{route('register.form')}}">Registrar</a>
 
 																</p>
 																<!--/ End Form -->
@@ -338,7 +338,7 @@
                                                 <a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Añadir a comparar</span></a>
                                             </div>
                                             <div class="product-action-2">
-                                                <a title="Add to cart" href="#">Añadir al acarrito</a>
+                                                <a title="Add to cart" href="#">Añadir al carrito</a>
                                             </div>
                                         </div>
                                     </div>
@@ -397,7 +397,7 @@
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                         <div class="quickview-content">
-                            <h2>Flared Shift Dress</h2>
+                            <h2>Comida para perros</h2>
                             <div class="quickview-ratting-review">
                                 <div class="quickview-ratting-wrap">
                                     <div class="quickview-ratting">
@@ -410,17 +410,17 @@
                                     <a href="#"> (1 customer review)</a>
                                 </div>
                                 <div class="quickview-stock">
-                                    <span><i class="fa fa-check-circle-o"></i> in stock</span>
+                                    <span><i class="fa fa-check-circle-o"></i> en stock</span>
                                 </div>
                             </div>
-                            <h3>$29.00</h3>
+                            <h3>S/50.00</h3>
                             <div class="quickview-peragraph">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia iste laborum ad impedit pariatur esse optio tempora sint ullam autem deleniti nam in quos qui nemo ipsum numquam.</p>
+                                <p>El mejor alimento para tu mejor amigo.</p>
                             </div>
                             <div class="size">
                                 <div class="row">
                                     <div class="col-lg-6 col-12">
-                                        <h5 class="title">Size</h5>
+                                        <h5 class="title">Tamaño</h5>
                                         <select>
                                             <option selected="selected">s</option>
                                             <option>m</option>
@@ -457,12 +457,12 @@
                                 <!--/ End Input Order -->
                             </div>
                             <div class="add-to-cart">
-                                <a href="#" class="btn">Add to cart</a>
+                                <a href="#" class="btn">Agregar al carrito</a>
                                 <a href="#" class="btn min"><i class="ti-heart"></i></a>
                                 <a href="#" class="btn min"><i class="fa fa-compress"></i></a>
                             </div>
                             <div class="default-social">
-                                <h4 class="share-now">Share:</h4>
+                                <h4 class="share-now">Compartir:</h4>
                                 <ul>
                                     <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
                                     <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>

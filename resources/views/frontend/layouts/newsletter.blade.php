@@ -8,10 +8,10 @@
                     <!-- Start Newsletter Inner -->
                     <div class="inner">
                         <h4>Newsletter</h4>
-                        <p>Suscríbete a nuestra newsletter y obtén <span>10%</span> descuento en tu primera compra</p>
+                        <p>Suscríbete a nuestro boletin informativo y obtén <span>10%</span> descuento en tu primera compra</p>
                         <form action="{{route('subscribe')}}" method="post" class="newsletter-inner">
                             @csrf
-                            <input name="email" placeholder="Your email address" required="" type="email">
+                            <input name="email" placeholder="Ingrese su correo" required="" type="email">
                             <button class="btn" type="submit">Suscribete</button>
                         </form>
                     </div>

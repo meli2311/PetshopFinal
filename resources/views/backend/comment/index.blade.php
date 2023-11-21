@@ -9,7 +9,7 @@
          </div>
      </div>
     <div class="card-header py-3">
-      <h6 class="m-0 font-weight-bold text-primary float-left">Comment Lists</h6>
+      <h6 class="m-0 font-weight-bold text-primary float-left">Lista de comentarios</h6>
     </div>
     <div class="card-body">
       <div class="table-responsive">
@@ -17,31 +17,31 @@
         <table class="table table-bordered" id="order-dataTable" width="100%" cellspacing="0">
           <thead>
             <tr>
-              <th>S.N.</th>
-              <th>Author</th>
-              <th>Post Title</th>
-              <th>Message</th>
-              <th>Date</th>
-              <th>Status</th>
-              <th>Action</th>
+              <th>Numero</th>
+              <th>Autor</th>
+              <th>Titulo de publicaicon</th>
+              <th>Mensaje</th>
+              <th>Dato</th>
+              <th>Estado</th>
+              <th>Accion</th>
             </tr>
           </thead>
           <tfoot>
             <tr>
-              <th>S.N.</th>
-              <th>Author</th>
-              <th>Post Title</th>
-              <th>Message</th>
-              <th>Date</th>
-              <th>Status</th>
-              <th>Action</th>
+              <th>Numero</th>
+              <th>Autor</th>
+              <th>Titulo de publicaicon</th>
+              <th>Mensaje</th>
+              <th>Dato</th>
+              <th>Estado</th>
+              <th>Accion</th>
             </tr>
           </tfoot>
           <tbody>
             @foreach($comments as $comment)
                 <tr>
                     <td>{{$comment->id}}</td>
-                    <td>{{$comment->user_info['name']}}</td>
+                    <td>{{ $comment->user_info['name'] ?? 'N/A' }}</td>
                     <td>{{$comment->post->title}}</td>
                     <td>{{$comment->comment}}</td>
                     <td>{{$comment->created_at->format('M d D, Y g: i a')}}</td>
@@ -66,7 +66,7 @@
         </table>
         <span style="float:right">{{$comments->links()}}</span>
         @else
-          <h6 class="text-center">No post comments found!!!</h6>
+          <h6 class="text-center">¡No se encontraron comentarios de publicaciones!</h6>
         @endif
       </div>
     </div>

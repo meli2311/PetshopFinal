@@ -80,7 +80,7 @@
                             </select>
                             <form method="POST" action="{{route('product.search')}}">
                                 @csrf
-                                <input name="search" placeholder="Search Products Here....." type="search">
+                                <input name="search" placeholder="Busque productos aquí....." type="search">
                                 <button class="btnn" type="submit"><i class="ti-search"></i></button>
                             </form>
                         </div>
@@ -127,7 +127,7 @@
                                     <div class="bottom">
                                         <div class="total">
                                             <span>Total</span>
-                                            <span class="total-amount">${{number_format(Helper::totalWishlistPrice(),2)}}</span>
+                                            <span class="total-amount">S/{{number_format(Helper::totalWishlistPrice(),2)}}</span>
                                         </div>
                                         <a href="{{route('cart')}}" class="btn animate">Verificar</a>
                                     </div>
@@ -164,7 +164,7 @@
                                     <div class="bottom">
                                         <div class="total">
                                             <span>Total</span>
-                                            <span class="total-amount">${{number_format(Helper::totalCartPrice(),2)}}</span>
+                                            <span class="total-amount">S/{{number_format(Helper::totalCartPrice(),2)}}</span>
                                         </div>
                                         <a href="{{route('checkout')}}" class="btn animate">Verificar</a>
                                     </div>

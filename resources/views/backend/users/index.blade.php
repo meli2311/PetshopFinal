@@ -9,34 +9,34 @@
          </div>
      </div>
     <div class="card-header py-3">
-      <h6 class="m-0 font-weight-bold text-primary float-left">Users List</h6>
-      <a href="{{route('users.create')}}" class="btn btn-primary btn-sm float-right" data-toggle="tooltip" data-placement="bottom" title="Add User"><i class="fas fa-plus"></i> Add User</a>
+      <h6 class="m-0 font-weight-bold text-primary float-left">Lista de usuarios</h6>
+      <a href="{{route('users.create')}}" class="btn btn-primary btn-sm float-right" data-toggle="tooltip" data-placement="bottom" title="Add User"><i class="fas fa-plus"></i> Agregar usuario</a>
     </div>
     <div class="card-body">
       <div class="table-responsive">
         <table class="table table-bordered" id="user-dataTable" width="100%" cellspacing="0">
           <thead>
             <tr>
-              <th>S.N.</th>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Photo</th>
-              <th>Join Date</th>
-              <th>Role</th>
-              <th>Status</th>
-              <th>Action</th>
+              <th>Numero</th>
+              <th>Nombre</th>
+              <th>Correo</th>
+              <th>Imagen</th>
+              <th>Fecha de ingreso</th>
+              <th>Rol</th>
+              <th>Estado</th>
+              <th>Accion</th>
             </tr>
           </thead>
           <tfoot>
             <tr>
-                <th>S.N.</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Photo</th>
-                <th>Join Date</th>
-                <th>Role</th>
-                <th>Status</th>
-                <th>Action</th>
+              <th>Numero</th>
+              <th>Nombre</th>
+              <th>Correo</th>
+              <th>Imagen</th>
+              <th>Fecha de ingreso</th>
+              <th>Role</th>
+              <th>Estado</th>
+              <th>Accion</th>
               </tr>
           </tfoot>
           <tbody>
