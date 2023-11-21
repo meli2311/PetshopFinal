@@ -81,7 +81,11 @@
         </div>
 
         <div class="form-group mb-3">
+<<<<<<< HEAD
            <button class="btn btn-success" type="submit">Actualizar</button>
+=======
+           <button class="btn btn-success" type="submit" aria-label="Update">Update</button>
+>>>>>>> 6ef68cfb76da90f7c6f0b47861090b4dac5b4941
         </div>
       </form>
     </div>

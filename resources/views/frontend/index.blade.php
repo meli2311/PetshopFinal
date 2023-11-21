@@ -89,12 +89,12 @@
                                     // dd($categories);
                                 @endphp
                                 @if($categories)
-                                <button class="btn" style="background:black"data-filter="*">
+                                <button class="btn" style="background:black"data-filter="*" aria-label="Todos los productos">
                                     Todos los productos
                                 </button>
                                     @foreach($categories as $key=>$cat)
 
-                                    <button class="btn" style="background:none;color:black;"data-filter=".{{$cat->id}}">
+                                    <button class="btn" style="background:none;color:black;" data-filter=".{{$cat->id}}" aria-label="filter">
                                         {{$cat->title}}
                                     </button>
                                     @endforeach
@@ -484,14 +484,14 @@
                                                 <!-- Input Order -->
                                                 <div class="input-group">
                                                     <div class="button minus">
-                                                        <button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                        <button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]" aria-label="minus">
                                                             <i class="ti-minus"></i>
                                                         </button>
                                                     </div>
 													<input type="hidden" name="slug" value="{{$product->slug}}">
                                                     <input type="text" name="quant[1]" class="input-number"  data-min="1" data-max="1000" value="1">
                                                     <div class="button plus">
-                                                        <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
+                                                        <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]" aria-label="plus">
                                                             <i class="ti-plus"></i>
                                                         </button>
                                                     </div>
@@ -499,7 +499,7 @@
                                                 <!--/ End Input Order -->
                                             </div>
                                             <div class="add-to-cart">
-                                                <button type="submit" class="btn">Agregar al carrito</button>
+                                                <button type="submit" class="btn" aria-label="Agregar al carrito">Agregar al carrito</button>
                                                 <a href="{{route('add-to-wishlist',$product->slug)}}" class="btn min"><i class="ti-heart"></i></a>
                                             </div>
                                         </form>

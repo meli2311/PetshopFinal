@@ -67,7 +67,11 @@
 										</div>
 										<div class="col-12">
 											<div class="form-group button">
+<<<<<<< HEAD
 												<button type="submit" class="btn ">Enviar mensaje</button>
+=======
+												<button type="submit" class="btn" aria-label="Send Message">Send Message</button>
+>>>>>>> 6ef68cfb76da90f7c6f0b47861090b4dac5b4941
 											</div>
 										</div>
 									</div>

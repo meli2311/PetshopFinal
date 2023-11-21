@@ -27,7 +27,7 @@
           @enderror
         </div>
         <div class="form-group mb-3">
-           <button class="btn btn-success" type="submit">Actualizar</button>
+           <button class="btn btn-success" type="submit" aria-label="Actualizar">Actualizar</button>
         </div>
       </form>
     </div>

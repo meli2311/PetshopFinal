@@ -80,7 +80,11 @@
                         @enderror
                         </div>
 
+<<<<<<< HEAD
                         <button type="submit" class="btn btn-success btn-sm">Actualizar</button>
+=======
+                        <button type="submit" class="btn btn-success btn-sm" aria-label="Update">Update</button>
+>>>>>>> 6ef68cfb76da90f7c6f0b47861090b4dac5b4941
                 </form>
             </div>
         </div>

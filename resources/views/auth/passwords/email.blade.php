@@ -41,7 +41,7 @@
                             </span>
                         @enderror
                     </div>
-                    <button type="submit" class="btn btn-primary btn-user btn-block">
+                    <button type="submit" class="btn btn-primary btn-user btn-block" aria-label="Reset Password">
                       Reset Password
                     </button>
                   </form>

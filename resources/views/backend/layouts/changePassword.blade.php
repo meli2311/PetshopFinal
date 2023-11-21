@@ -40,8 +40,13 @@
    
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
+<<<<<<< HEAD
                                 <button type="submit" class="btn btn-primary">
                                     Actualizar contraseña
+=======
+                                <button type="submit" class="btn btn-primary" aria-label="Update Password">
+                                    Update Password
+>>>>>>> 6ef68cfb76da90f7c6f0b47861090b4dac5b4941
                                 </button>
                             </div>
                         </div>

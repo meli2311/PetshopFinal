@@ -32,8 +32,13 @@
         </div>
         <div class="modal-body">Seleccione "Cerrar sesión" a continuación si está listo para finalizar su sesión actual.</div>
         <div class="modal-footer">
+<<<<<<< HEAD
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
           <a class="btn btn-primary" href="login.html">Salir</a>
+=======
+          <button class="btn btn-secondary" type="button" data-dismiss="modal" aria-label="Cancel">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+>>>>>>> 6ef68cfb76da90f7c6f0b47861090b4dac5b4941
         </div>
       </div>
     </div>

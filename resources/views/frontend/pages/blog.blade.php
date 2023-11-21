@@ -60,7 +60,7 @@
                         <div class="single-widget search">
                             <form class="form" method="GET" action="{{route('blog.search')}}">
                                 <input type="text" placeholder="Search Here..." name="search">
-                                <button class="button" type="sumbit"><i class="fa fa-search"></i></button>
+                                <button class="button" type="sumbit" aria-label="search"><i class="fa fa-search"></i></button>
                             </form>
                         </div>
                         <!--/ End Single Widget -->
@@ -141,7 +141,7 @@
                                 <form method="POST" action="{{route('subscribe')}}" class="form-inner">
                                     @csrf
                                     <input type="email" name="email" placeholder="Enter your email">
-                                    <button type="submit" class="btn " style="width: 100%">Ingresar</button>
+                                    <button type="submit" class="btn " style="width: 100%" aria-label="Ingresar">Ingresar</button>
                                 </form>
                             </div>
                         </div>

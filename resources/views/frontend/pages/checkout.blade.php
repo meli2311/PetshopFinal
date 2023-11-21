@@ -218,7 +218,11 @@
                                 <div class="single-widget get-button">
                                     <div class="content">
                                         <div class="button">
+<<<<<<< HEAD
                                             <button type="submit" class="btn"> Proceder con la compra</button>
+=======
+                                            <button type="submit" class="btn" aria-label="Pase por caja">proceed to checkout</button>
+>>>>>>> 6ef68cfb76da90f7c6f0b47861090b4dac5b4941
                                         </div>
                                     </div>
                                 </div>
@@ -289,7 +293,7 @@
                                 Suscríbete a nuestra newsletter y obtén<span>10%</span> para tu primera compra</p>
                             <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
                                 <input name="EMAIL" placeholder="Your email address" required="" type="email">
-                                <button class="btn">Subscribete</button>
+                                <button class="btn" aria-label="Subscribete">Subscribete</button>
                             </form>
                         </div>
                         <!-- End Newsletter Inner -->

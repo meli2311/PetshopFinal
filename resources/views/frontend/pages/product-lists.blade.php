@@ -76,6 +76,7 @@
 													<input type="text" id="amount" name="price_range" value='@if (!empty($_GET['price'])) {{$_GET['price']}} @endif' placeholder="Add Your Price"/>
 												</div>
 											</div> --}}
+<<<<<<< HEAD
                                         @php
                                             $max = DB::table('products')->max('price');
                                             // dd($max);
@@ -94,6 +95,24 @@
                                     </div>
                                 </div>
                                 {{-- <ul class="check-box-list">
+=======
+											@php
+												$max=DB::table('products')->maximo('price');
+												// dd($max);
+											@endphp
+											<div id="slider-range" data-min="0" data-max="{{$max}}"></div>
+											<div class="product_filter">
+											<button type="submit" class="filter_button" aria-label="Filtro">Filtro</button>
+											<div class="label-input">
+												<span>Rango:</span>
+												<input style="" type="text" id="amount" readonly/>
+												<input type="hidden" name="price_range" id="price_range" value="@if(!empty($_GET['price'])){{$_GET['price']}}@endif"/>
+											</div>
+											</div>
+										</div>
+									</div>
+									{{-- <ul class="check-box-list">
+>>>>>>> 6ef68cfb76da90f7c6f0b47861090b4dac5b4941
 										<li>
 											<label class="checkbox-inline" for="1"><input name="news" id="1" type="checkbox">$20 - $50<span class="count">(3)</span></label>
 										</li>
@@ -316,6 +335,7 @@
 															<i class="yellow fa fa-star"></i>
 															<i class="yellow fa fa-star"></i>
 															<i class="fa fa-star"></i> --}}
+<<<<<<< HEAD
 														@php
 															$rate = DB::table('product_reviews')
 																->where('product_id', $product->id)
@@ -412,6 +432,89 @@
         @endforeach
     @endif
     <!-- Modal end -->
+=======
+															@php
+																$rate=DB::table('product_reviews')->donde('product_id',$product->id)->avg('rate');
+																$rate_count=DB::table('product_reviews')->donde('product_id',$product->id)->count();
+															@endphp
+															@for($i=1; $i<=5; $i++)
+																@if($rate>=$i)
+																	<i class="yellow fa fa-star"></i>
+																@else 
+																<i class="fa fa-star"></i>
+																@endif
+															@endfor
+														</div>
+														<a href="#"> ({{$rate_count}}revisión del cliente)</a>
+													</div>
+													<div class="quickview-stock">
+														@if($product->stock >0)
+														<span><i class="fa fa-check-circle-o"></i> {{$product->stock}}conn stock</span>
+														@else 
+														<span><i class="fa fa-times-circle-o text-danger"></i> {{$product->stock}} sin stock</span>
+														@endif
+													</div>
+												</div>
+												@php
+													$after_discount=($product->price-($product->price*$product->discount)/100);
+												@endphp
+												<h3><small><del class="text-muted">${{number_format($product->price,2)}}</del></small>    ${{number_format($after_discount,2)}}  </h3>
+												<div class="quickview-peragraph">
+													<p>{!! html_entity_decode($product->summary) !!}</p>
+												</div>
+												@if($product->size)
+													<div class="size">
+														<h4>Size</h4>
+														<ul>
+															@php 
+																$sizes=explode(',',$product->size);
+																// dd($sizes);
+															@endphp
+															@foreach($sizes as $size)
+															<li><a href="#" class="one">{{$size}}</a></li>
+															@endforeach
+														</ul>
+													</div>
+												@endif
+												<form action="{{route('single-add-to-cart')}}" method="POST">
+													@csrf 
+													<div class="quantity">
+														<!-- Input Order -->
+														<div class="input-group">
+															<div class="button minus">
+																<button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]" aria-label="minus">
+																	<i class="ti-minus"></i>
+																</button>
+															</div>
+															<input type="hidden" name="slug" value="{{$product->slug}}">
+															<input type="text" name="quant[1]" class="input-number"  data-min="1" data-max="1000" value="1">
+															<div class="button plus">
+																<button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]" aria-label="plus">
+																	<i class="ti-plus"></i>
+																</button>
+															</div>
+														</div>
+														<!--/ End Input Order -->
+													</div>
+													<div class="add-to-cart">
+														<button type="submit" class="btn" aria-label="Agregar al carrito">Agregar al carrito</button>
+														<a href="{{route('add-to-wishlist',$product->slug)}}" class="btn min"><i class="ti-heart"></i></a>
+													</div>
+												</form>
+												<div class="default-social">
+												<!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+			@endforeach
+		@endif
+			<!-- Modal end -->
+>>>>>>> 6ef68cfb76da90f7c6f0b47861090b4dac5b4941
 @endsection
 @push('styles')
     <style>

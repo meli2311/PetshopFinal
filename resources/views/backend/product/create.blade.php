@@ -140,8 +140,8 @@
           @enderror
         </div>
         <div class="form-group mb-3">
-          <button type="reset" class="btn btn-warning">Limpiar</button>
-           <button class="btn btn-success" type="submit">Crear</button>
+          <button class="btn btn-warning" type="reset" aria-label="Limpiar">Limpiar</button>
+           <button class="btn btn-success" type="submit" aria-label="Crear">Crear</button>
         </div>
       </form>
     </div>
