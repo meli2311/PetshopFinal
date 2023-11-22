@@ -113,7 +113,7 @@
 
 <!-- Jquery -->
 <script src="{{ asset('frontend/js/jquery.min.js') }}"></script>
-{{-- <script src="{{ asset('frontend/js/jquery-migrate-3.0.0.js') }}"></script> --}}
+<script src="{{ asset('frontend/js/jquery-migrate-3.0.0.js') }}"></script>
 <script src="{{ asset('frontend/js/jquery-ui.min.js') }}"></script>
 <!-- Popper JS -->
 <script src="{{ asset('frontend/js/popper.min.js') }}"></script>
