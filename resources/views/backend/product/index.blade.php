@@ -33,23 +33,6 @@
               <th>Accion</th>
             </tr>
           </thead>
-          <tfoot>
-            <tr>
-              <th>Numero</th>
-              <th>Titulo</th>
-              <th>Categoria</th>
-              <th>Es Destacado</th>
-              <th>Precio</th>
-              <th>Descuento</th>
-              <th>Tamaño</th>
-              <th>Condicion</th>
-              <th>Marca</th>
-              <th>Stock</th>
-              <th>Imagen</th>
-              <th>Estado</th>
-              <th>Accion</th>
-            </tr>
-          </tfoot>
           <tbody>
 
             @foreach($products as $product)
@@ -141,6 +124,7 @@
   <!-- Page level plugins -->
   <script src="{{asset('backend/vendor/datatables/jquery.dataTables.min.js')}}"></script>
   <script src="{{asset('backend/vendor/datatables/dataTables.bootstrap4.min.js')}}"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
 
   <!-- Page level custom scripts -->
